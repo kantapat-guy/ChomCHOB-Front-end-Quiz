@@ -1,0 +1,16 @@
+.footer-container {
+    background-color: #1a586a;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
