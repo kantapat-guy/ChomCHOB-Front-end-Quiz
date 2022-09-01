@@ -1,0 +1,147 @@
+.item-container{
+    margin-top: 126px;
+    margin-left: 153px;
+    margin-right: 153px;
+    padding: 24px;
+    background-color: #FFF;
+    border-radius: 16px;
+    height: 448px;
+    width: fit-content;
+    display: flex;
+}
+.item-img {
+    width: 400px;
+    height: 400px;
+    margin-right: 24px;
+    object-fit: cover;
+}
+
+.item-name {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 500;
+    color: #707070;
+    margin-bottom: 16px;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+}
+.item-review {
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A4A4A4;
+}
+
+.item-des {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #939393;
+    text-align: left;
+    margin: 16px 0px;
+}
+
+.text-price {
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    color: #939393;
+    
+}
+.cost {
+    color: #FF6F61;
+    font-weight: 500;
+    font-size: 28px;
+}
+.discount {
+    padding-left: 50px;
+    text-decoration-line: line-through;
+    color: #939393;
+    font-weight: 400;
+    font-size: 14px;
+}
+.price-item {
+    display: flex;
+    text-align: left;
+    padding-top: 3px;
+    align-items: flex-end;
+}
+
+.quan-item {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.quan-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #484848;
+}
+.myCounter {
+    width: 128px;
+    height: 38px;
+    background: #F5F5F5;
+    border: 1px solid #484848;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 55px;
+}
+.minus {
+    background: #FFFFFF;
+    border-radius: 10px 0px 0px 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #484848;
+    width: 37.5px;
+    height: 36px;
+    border: transparent;
+    cursor: pointer;
+}
+.counter-value {
+    font-weight: 500;
+    font-size: 18px;
+    color: #484848;
+}
+.plus {
+    background: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #484848;
+    width: 37.5px;
+    height: 36px;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+.cart-btn {
+    background-color: #FF6F61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 242px;
+    height: 50px;
+    border-radius: 8px;
+    color: #F9F9F9;
+    border: transparent;
+    cursor: pointer;
+}
+.cart-btn:hover {
+    background-color: #ff988e;
+}
+
+.add-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 9.5px;
+}
+
+
