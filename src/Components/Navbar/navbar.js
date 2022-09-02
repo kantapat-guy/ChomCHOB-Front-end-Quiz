@@ -21,7 +21,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <Link className='menu-link' to="/cart" >
-                <div className="cart-container">
+                <div className="cart-icon-container">
                     <BagHappy 
                     size="24"
                     color="#ffffff"
