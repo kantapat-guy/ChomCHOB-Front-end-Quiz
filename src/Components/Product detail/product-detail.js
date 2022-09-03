@@ -7,7 +7,7 @@ import Star from '../../Assets/star.png';
 import EmptyStar from '../../Assets/empty.png'
 import { BagTick } from 'iconsax-react';
 
-const ProductDetail = () => {
+const ProductDetail = (props) => {
 
     const [data, setData] = useState([])
     const [price, setPrice] = useState([])
@@ -55,7 +55,12 @@ const ProductDetail = () => {
         setCounter(counter+1)
     }
 
-    console.log(Math.ceil(review.rating))
+    const dataForCart = {
+        name: data.name,
+        price: data.price,
+        quantity: counter,
+        img: data.image_url,
+    }
 
     return (
         <div className='item-container'>
@@ -92,7 +97,7 @@ const ProductDetail = () => {
                         <button className='plus' onClick={() => plus()} >+</button>
                     </div>
                 </div>
-                <button className='cart-btn'>
+                <button className='cart-btn' onClick={() => props.onAdd(dataForCart)} >
                     <BagTick
                         size="24"
                         color="#F9F9F9"

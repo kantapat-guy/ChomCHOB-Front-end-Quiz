@@ -5,7 +5,7 @@
     padding: 24px;
     background-color: #FFF;
     border-radius: 16px;
-    height: 448px;
+    height: fit-content;
     width: fit-content;
     display: flex;
 }

@@ -3,7 +3,7 @@ import Logo from '../../Assets/cob-logo.webp'
 import { BagHappy } from 'iconsax-react';
 import {Link} from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = (props) => {
 
     return (
         <div className="nav-container">
@@ -26,6 +26,7 @@ const NavBar = () => {
                     size="24"
                     color="#ffffff"
                     />
+                    <div className="itemOnCart" >{props.itemOnCart}</div>
                     <p className='cart'>Cart</p>
                 </div>
             </Link>
