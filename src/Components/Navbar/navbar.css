@@ -61,3 +61,6 @@
     align-items: center;
     justify-content: center;
 }
+.cart:hover {
+    color: #c5c5c5;
+}

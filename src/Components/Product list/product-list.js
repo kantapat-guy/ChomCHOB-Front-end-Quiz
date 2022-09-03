@@ -60,19 +60,14 @@ const ProductList = () => {
         <div className="product-container" >
             <div className='product-header'>
                 <div className='total'>Products ({total})</div>
-                {/* <div className='toggle'>
-                    <Element3 className='grid-btn' size="32" color="black" onClick={() => showItem()} />
-                    <span className='slide' />
-                    <RowVertical className='list-btn' size="32" color="black" onClick={() => showItem()}/>
-                </div> */}
-                <label class="switch">
+                <label className="switch">
                     <div className='switch-container' >
                         <Element3 className='grid-btn' size="24" color="black" />
                         <RowVertical className='list-btn' size="24" color="black" />
                     </div>
 
                     <input type="checkbox"  onClick={() => showItem()}/>
-                    <span class="slider"></span>
+                    <span className="slider"></span>
                 </label>
             </div>
             {show ? 

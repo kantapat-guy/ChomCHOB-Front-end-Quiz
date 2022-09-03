@@ -56,11 +56,20 @@ const ProductDetail = (props) => {
     }
 
     const dataForCart = {
+        id: id,
         name: data.name,
         price: data.price,
         quantity: counter,
         img: data.image_url,
     }
+
+    //for update a rating star (force re-rendering)
+    const [starKeyForce, setStarKeyForce] = useState(0)
+
+    useEffect(() => {
+        setStarKeyForce(prev => prev + 1)
+    }, [review.rating])
+
 
     return (
         <div className='item-container'>
@@ -78,6 +87,7 @@ const ProductDetail = (props) => {
                         edit={false}
                         emptyIcon={<img src={EmptyStar} alt='empty-star1' />}
                         filledIcon={<img src={Star} alt='star1' />}
+                        key={starKeyForce}
                     />
                     <div className='item-review'>({review.number} reviews)</div>
                 </div>

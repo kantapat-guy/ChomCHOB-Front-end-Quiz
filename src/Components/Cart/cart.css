@@ -38,8 +38,10 @@ td, th {
     position: relative;
     left: 0px;
     height: 40px;
+    width: 40px;
     border-radius: 10px;
     margin: 20px 9px;
+    object-fit: cover;
 }
 
 .cart-img-name {
@@ -51,6 +53,9 @@ td, th {
     font-weight: 500;
     font-size: 14px;
     color: #484848;
+}
+.cart-name:hover {
+    color: #8c8c8c;
 }
 
 .table-data > td {
@@ -88,4 +93,7 @@ td, th {
     color: #F9F9F9;
     cursor: pointer;
     border: transparent;
+}
+.checkout:hover {
+    background-color: #ff988e;
 }
